@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>love message </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d32f2f;
+            font-size: 2em;
+            margin: 0;
+        }
+        .heart {
+            width: 100px;
+            height: 100px;
+            background-color: #d32f2f;
+            position: relative;
+            transform: rotate(-45deg);
+            margin: 20px auto;
+        }
+        .heart::before, .heart::after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background-color: #d32f2f;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .heart::before {
+            top: -50px;
+            left: 0;
+        }
+        .heart::after {
+            left: 50px;
+            top: 0;
+        }
+        button {
+            background-color: #388e3c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2e7d32;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart"></div>
+        <h1>ERES UNA MUJER MARAVILLOSA,<br>Y LO ESTÁS HACIENDO MUY BIEN,<br>LO VAS A LOGRAR TODO</h1>
+        <button onclick="showAlert()">Haz clic aquí si me amas😊</button>
+    </div>
+    <script>
+        function showAlert() {
+            alert("¡No creo que tanto como yo a ti, pero sigue intentando!");
+        }
+    </script>
+</body>
+</html>
